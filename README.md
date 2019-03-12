@@ -4,7 +4,7 @@ another-PRNG is a seeded pseudorandom number generator with a uniform distributi
 # License
 https://creativecommons.org/licenses/by-sa/4.0/
 
+
 # How it works
---------------
 
 xxx
