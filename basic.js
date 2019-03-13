@@ -10,7 +10,7 @@ function RandInt(low, high, seed){
     
     var n = seed || Math.PI;
     var k = (high-low)/Math.PI;
-    var n = Math.acos(Math.cos(n))*k + low;
+    var n = Math.acos(Math.cos(n))*k + low; // if you are working with small seeds ( -10 < seed < 10 ) then you may want to multiply n by some constant to make the numbers seem more random as they will be more spread out with small changes to the seed.
     var n = Math.round(n);
     
     return n;
@@ -25,7 +25,7 @@ function RandInt(low, high, seed){
  * @param {Number} seed - the seed with which you want to generate the numbers, if none is passed in pi is used
  */
  
- function RandInt(low, high, seed){
+ function RandFloat(low, high, seed){
     
     var n = seed || Math.PI;
     var k = (high-low)/Math.PI;
